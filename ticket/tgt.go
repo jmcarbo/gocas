@@ -3,8 +3,8 @@ package ticket
 import (
 	"time"
 
-	"github.com/apognu/gocas/config"
-	"github.com/apognu/gocas/util"
+	"github.com/jmcarbo/gocas/config"
+	"github.com/jmcarbo/gocas/util"
 )
 
 type TicketGrantingTicket struct {

@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/apognu/gocas/util"
+	"github.com/jmcarbo/gocas/util"
 	"gopkg.in/mgo.v2/bson"
 )
 

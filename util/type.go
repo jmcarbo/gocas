@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"time"
 
-	"github.com/apognu/gocas/config"
+	"github.com/jmcarbo/gocas/config"
 )
 
 type LoginRequestorData struct {

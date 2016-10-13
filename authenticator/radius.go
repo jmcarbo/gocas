@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/apognu/gocas/config"
+	"github.com/jmcarbo/gocas/config"
 	"github.com/kirves/goradius"
 )
 
@@ -16,7 +16,7 @@ func (Radius) Auth(r *http.Request) (bool, string) {
 
 	fmt.Println(config.Get().Radius.Host)
 	rad := goradius.Authenticator(config.Get().Radius.Host, config.Get().Radius.Port, config.Get().Radius.Secret)
-	ok, err := rad.Authenticate(u, p)
+	ok, err := rad.Authenticate(u, p, "")
 	if err != nil {
 		logrus.Errorf("could not authenticate into RADIUS server: %s", err)
 		return false, u

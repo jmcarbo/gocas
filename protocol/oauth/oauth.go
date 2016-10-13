@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/apognu/gocas/config"
-	"github.com/apognu/gocas/ticket"
-	"github.com/apognu/gocas/util"
+	"github.com/jmcarbo/gocas/config"
+	"github.com/jmcarbo/gocas/ticket"
+	"github.com/jmcarbo/gocas/util"
 	"github.com/gorilla/mux"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"

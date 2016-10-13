@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/apognu/gocas/authenticator"
-	"github.com/apognu/gocas/config"
-	"github.com/apognu/gocas/interceptor"
-	"github.com/apognu/gocas/protocol/cas"
-	"github.com/apognu/gocas/protocol/oauth"
-	"github.com/apognu/gocas/util"
+	"github.com/jmcarbo/gocas/authenticator"
+	"github.com/jmcarbo/gocas/config"
+	"github.com/jmcarbo/gocas/interceptor"
+	"github.com/jmcarbo/gocas/protocol/cas"
+	"github.com/jmcarbo/gocas/protocol/oauth"
+	"github.com/jmcarbo/gocas/util"
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"
 )
@@ -36,7 +36,7 @@ func redirect(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
-
+	flag.Parse()
 	config.Set(*c)
 	if AvailableProtocols[config.Get().Protocol] == nil {
 		logrus.Fatalf("unknown protocol: %s", config.Get().Protocol)

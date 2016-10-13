@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/apognu/gocas/authenticator"
-	"github.com/apognu/gocas/config"
-	"github.com/apognu/gocas/ticket"
-	"github.com/apognu/gocas/util"
+	"github.com/jmcarbo/gocas/authenticator"
+	"github.com/jmcarbo/gocas/config"
+	"github.com/jmcarbo/gocas/ticket"
+	"github.com/jmcarbo/gocas/util"
 	"github.com/gorilla/mux"
 	"gopkg.in/mgo.v2/bson"
 )

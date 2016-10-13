@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/apognu/gocas/config"
+	"github.com/jmcarbo/gocas/config"
 	"github.com/mqu/openldap"
 )
 

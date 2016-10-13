@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/apognu/gocas/ticket"
-	"github.com/apognu/gocas/util"
+	"github.com/jmcarbo/gocas/ticket"
+	"github.com/jmcarbo/gocas/util"
 	"gopkg.in/mgo.v2/bson"
 )
 

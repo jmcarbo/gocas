@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/apognu/gocas/config"
+	"github.com/jmcarbo/gocas/config"
 	"gopkg.in/mgo.v2"
 )
 
